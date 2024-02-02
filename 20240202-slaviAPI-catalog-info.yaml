@@ -23,9 +23,9 @@ spec:
     servers:
       - url: https://api.cbcpp-prod.com/
     paths:
-      /
+      /japan-today
        get:
-         operationId: 20231205_経済産業省gBizINFOGET
+         operationId: Get News
          summary: Get News
          responses:
            200:
