@@ -14,7 +14,7 @@ spec:
   type: openapi
   owner: group:default/team-devops
   lifecycle: experimental
-  system: cbcpp-prod-container
+  system: cbcpp-prod-engineering
   definition: |
     openapi: "3.0"
     info:
