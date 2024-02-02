@@ -1,0 +1,48 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: japan-today API
+  tags: ['apisix']
+  description: |
+    japan today
+  links:
+    - title: Management
+      url: https://mgmt.api.cbcpp-prod.com
+    - title: japan today
+      url: https://japantoday.com
+spec:
+  type: openapi
+  owner: group:default/team-devops
+  lifecycle: experimental
+  system: cbcpp-prod-container
+  definition: |
+    openapi: "3.0"
+    info:
+      version: 1.0
+    title: japan today
+    servers:
+      - url: https://api.cbcpp-prod.com/
+    paths:
+      /
+       get:
+         operationId: 20231205_経済産業省gBizINFOGET
+         summary: Get News
+         responses:
+           200:
+             description: Success
+           429:
+             description: Too Many Requests
+           404:
+             description: Not Found
+           500:
+             description: Internal Server Error
+           501:
+             description: Not Implemented
+           502:
+             description: Bad Gateway
+           503:
+             description: Service Unavailable
+           504:
+             description: Gateway Timeout
+           505:
+             description: HTTP Version Not Supported
