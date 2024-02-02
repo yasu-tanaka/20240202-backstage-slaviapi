@@ -30,6 +30,8 @@ spec:
          responses:
            200:
              description: Success
+             headers:
+               Access-Control-Allow-Origin:*
            429:
              description: Too Many Requests
            404:
