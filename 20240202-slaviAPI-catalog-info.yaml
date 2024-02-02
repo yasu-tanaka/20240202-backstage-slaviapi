@@ -30,6 +30,8 @@ spec:
          responses:
            200:
              description: Success
+             content:
+               application/json:
              headers:
                Access-Control-Allow-Origin:
                  "schema":
