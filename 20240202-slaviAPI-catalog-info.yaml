@@ -23,7 +23,7 @@ spec:
     servers:
       - url: https://api.cbcpp-prod.com/
     paths:
-      /japan-today
+      /japan-today:
        get:
          operationId: Get News
          summary: Get News
