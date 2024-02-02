@@ -32,6 +32,7 @@ spec:
              description: Success
              headers:
                Access-Control-Allow-Origin:*
+               Access-Control-Allow-Methods:GET
            429:
              description: Too Many Requests
            404:
